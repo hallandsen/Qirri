@@ -1,0 +1,135 @@
+body {
+  border-radius:0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+a {
+  color:#00BBFE;
+}
+a:hover, a:focus, a:visited, a:active {
+  text-decoration: none;
+}
+
+.container-fluid {
+  padding:0;
+}
+
+button {
+  border-radius: 20px;
+  padding: 8px 25px;
+  border: solid 1px;
+  background: none;
+}
+
+input {
+  display: inline-block;
+  border: solid 1px #00BBFE;
+  padding:20px 20px;
+  border-radius: 4px;
+}
+
+.row {
+  margin:0;
+}
+
+.navbar {
+  height: 60px;
+  border-bottom: 1px solid #DDDDDD;
+  padding:0 20px;
+  border-radius:0;
+  align-items: center;
+  margin: 0 0 40px 0;
+}
+
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-logo img {
+  height:40px;
+}
+
+.nav-profile {
+  float:right;
+  width: 200px;
+  color:#00BBFE;
+  font-size: 1.1em;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-register a {
+  margin-left: 20px;
+}
+
+.nav-profile-img {
+  background: url(../img/user-stock.jpg) center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-left: 20px;
+}
+
+.page-wrapper {
+  display: flex;
+}
+
+/* //////////////// SIDEBAR //////////////// */
+
+.sidebar {
+  padding: 0 30px;
+  font-size: 1.1em;
+  min-width: 250px;
+  max-width: 250px;
+}
+
+.quesitons-header {
+  font-weight: 500;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin:20px 0;
+  font-weight: 300;
+}
+
+.sidebar li a {
+  color: #A5A5A5;
+}
+
+.sidebar a.sidebar-active {
+  padding: 3px 0 3px 10px;
+  border-left: #00BBFE 3px solid;
+}
+
+.questions a.sidebar-active {
+  color:black;
+}
+
+.groups {
+  margin-top: 60px;
+}
+
+.groups li img {
+  height:20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.groups-options li a {
+  color:#00BBFE;
+}
+
+/* //////////////// VIEW //////////////// */
+
+.discover-menu, .discover-content, .view {
+  padding:0;
+  font-size: 1.05em
+}

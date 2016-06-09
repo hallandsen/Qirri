@@ -1,0 +1,208 @@
+.group-show {
+  background-color: #E8580F;
+  color:white;
+  padding:70px 0;
+  position: relative;
+  max-height:260px;
+  transition: max-height 0.35s ease-out;
+  overflow: hidden;
+}
+
+.expand-group {
+  transition: max-height 0.35s ease-out;
+  max-height:3000px;
+}
+
+.group-show_expand_wrapper {
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  height:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E8580F;;
+}
+
+.group-show_expand, .group-hide_expand {
+  display: block;
+  height: 30px;
+  cursor: pointer;
+}
+
+.hide-arrow {
+  display: none;
+}
+
+/*GROUP CONTENT*/
+
+.group-show_left {
+  display: flex;
+  justify-content: center;
+}
+
+.group-show_img {
+  background: url(../img/novartis.png) center no-repeat;
+  background-color: white;
+  background-size: 70px;
+  border-radius: 100%;
+  height:100px;
+  width: 100px;
+}
+
+.group-show_right {
+  padding-right: 40px;
+}
+
+.group-show_right h2 {
+  margin:10px 0 5px;
+}
+
+.group-show_info {
+  margin-bottom: 10px;
+}
+
+.group-show_description p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.group-show_admin {
+  margin-top: 40px;
+}
+
+.show-admin, .post-show_user {
+  display: flex;
+  align-items: center;
+}
+
+.show-admin_header {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.show-admin_img, .post-show_img {
+  background: url(../img/user-stock.jpg) center;
+  background-size: cover;
+  border-radius: 100%;
+  height:50px;
+  width: 50px;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.show-admin_text, .post-show_text {
+  display: inline-block;
+}
+
+.show-admin_name, .post-show_name {
+  font-weight: 500;
+}
+
+.group-show_join-btn{
+  color:white;
+  border-color:white;
+  position: absolute;
+  top:30px;
+  right:30px;
+}
+
+.group-show_join-btn:hover {
+  color:#E8580F;
+  background-color: white;
+}
+
+.group-settings {
+  display: flex;
+  justify-content: center;
+}
+
+.group-settings span {
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.group-settings ul {
+ list-style: none;
+ padding:0;
+}
+
+.group-settings li {
+  margin: 20px 0;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+.group-settings a {
+  color:#A5A5A5;
+}
+
+/*GROUP CONVERSATION*/
+
+.group-conversation_user_post {
+  padding: 40px 0 25px;
+  border-bottom: solid 1px #00BBFE;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-show_user {
+  display: inline-block;
+  float:left;
+  display: flex;
+}
+
+.group-conversation {
+  padding:0;
+}
+
+.group-conversation_user_post input {
+  float: right;
+  width: 65%;
+}
+
+.group-question {
+  margin-top:60px;
+  font-size: 1.1em;
+}
+
+.group-question_left {
+  display: inline-block;
+  float: left;
+}
+
+.group-question_right {
+  display: inline-block;
+  float: right;
+  width: 65%;
+}
+
+.post-info {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.group-question_header {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.group-question_activity {
+  margin-bottom: 15px;
+}
+
+.group-question_activity img {
+  height:15px;
+  margin-right: 2px;
+}
+
+.group-question_activity div {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.7em;
+  color:#ABABAB;
+  margin-right: 15px;
+}

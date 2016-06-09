@@ -1,0 +1,84 @@
+.view {
+  display: flex;
+  justify-content: center;
+}
+
+.signup {
+  max-width:550px;
+  height:600px;
+}
+
+.signup h2 {
+  text-align: center;
+  margin: 0 0 60px;
+}
+
+input {
+  display: inline-block;
+  border: solid 1px #00BBFE;
+  padding:20px 20px;
+  border-radius: 4px;
+}
+
+.signup-names {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.signup-name {
+  width: 48%;
+  margin-right:2%;
+}
+
+.signup-lastname {
+  width:48%;
+  margin-left:2%;
+}
+.signup-field {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.signup-no_margin {
+  margin: 0;
+}
+
+.signup-password_feedback {
+  display: inline-block;
+  margin: 10px 0 0 10px;
+  color:#8ED72B;
+  font-weight: 500;
+}
+
+.signup-btn  {
+  float:right;
+  margin-top: 25px;
+  color:#00BBFE;
+  border-color: #00BBFE;
+  padding: 10px 40px;
+}
+
+/*.signup-btn:hover {
+  background-color: #00BBFE;
+  color:white;
+}*/
+
+/*SUCCESS*/
+
+.success-btns {
+  float:right;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+.success-btns a {
+  color: black;
+}
+
+.success-btns a:hover {
+  color:#00BBFE;
+}
+
+.success-btns .signup-btn {
+  margin:0 0 0 25px;
+}

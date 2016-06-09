@@ -1,0 +1,79 @@
+.groups {
+  margin-top: 60px;
+}
+
+.groups li img {
+  height:20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.groups-options li a {
+  color:#00BBFE;
+}
+
+.discover-menu {
+  margin-bottom: 70px;
+}
+
+.discover-menu ul {
+  padding:0;
+  list-style: none;
+}
+
+.discover-menu li {
+  display: inline;
+  margin-right: 40px;
+  font-size: 1.1em;
+}
+
+.discover-menu li a {
+  color: #A5A5A5;
+}
+
+.discover-menu li a.view-active {
+  color: black;
+  border-bottom: 3px solid black;
+}
+
+.discover-show_group {
+  width: 100%;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.discover-show_group_img {
+  display: inline-block;
+  width: 150px;
+}
+
+.discover-show_group_img img {
+  width:90px;
+}
+
+.discover-show_group_text {
+  display: inline-block;
+  max-width: 700px;
+  margin-bottom:;
+}
+
+.discover-show_group_text h2 {
+  margin:0;
+}
+
+.show-group_info {
+  margin-bottom: 10px;
+}
+
+.show-group_description {
+  margin-bottom: 20px;
+}
+
+.show-group_join_btn {
+  border: solid 1px #00AAFF;
+  color:#00AAFF;
+}
+
+.show-group_join_btn:hover {
+  color:white;
+  background-color: #00AAFF;
+}

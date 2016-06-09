@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/group.css" rel="stylesheet" />
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
+    <title>Qirri</title>
+  </head>
+
+  <body class="container-fluid">
+
+    <nav class="navbar">
+      <div class="nav-logo">
+        <img src="img/screenshot-logo.png" alt="">
+      </div>
+        <div class="nav-profile">
+          <!-- <div class="nav-question">
+            Post a question
+          </div>
+          <div class="nav-profile-img"></div> -->
+        <div class="nav-register">
+          <a href="login.html">Sign in</a>
+          <a href="register.html">Register</a>
+        </div>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+
+      <div class="sidebar">
+        <div class="questions">
+          <div class="quesitons-header">
+            Questions
+          </div>
+          <ul>
+            <li><a href="#">Most recent</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Following</a></li>
+          </ul>
+        </div>
+
+        <div class="groups">
+          <div class="groups-header">
+            Groups
+          </div>
+          <ul class="groups-list">
+            <li><a href="#">  <img src="img/cardiology.png" alt="">       Cardiology</a></li>
+            <li><a href="#">  <img src="img/hovedstaden.png" alt="">      Rigshospitalet</a></li>
+            <li><a href="#" class="sidebar-active">  <img src="img/novartis.png" alt="">         Novartis</a></li>
+            <li><a href="#">  <img src="img/hjerteforeningen.png" alt=""> Hjerteforeningen</a></li>
+            <li><a href="#">  <img src="img/cv-expert.png" alt="">        CV Expert</a></li>
+          </ul>
+
+          <ul class="groups-options">
+            <li> <a href="index.html">Discover new Groups</a> </li>
+            <li> <a href="">Create Group</a> </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="view">
+
+        <div class="row">
+          <div class="group-show col-xs-12 col-sm-9 col-md-9">
+            <div class="group-show_left col-xs-12 col-sm-3 col-md-3">
+              <div class="group-show_img"></div>
+
+            </div>
+
+            <div class="group-show_right col-xs-12 col-sm-9 col-md-9">
+
+              <div class="group-show_wrapper">
+                <h2>Novartis</h2>
+                <div class="group-show_info">
+                  467 members · Private Group
+                </div>
+                <div class="group-show_description">
+                  <p>Cataract surgery involves the surgical removal of the lens of an eye that has formed a cataract. Cataract extraction is the one of the most common eye surgeries performed and is widely regarded as being one of the safest procedures in the medical community. A cataract occurs when the crystalline lens of the eye becomes cloudy or opaque as a result of age, illness, or trauma. This cloudiness can interfere with the eye’s natural ability to direct light and focus an image on the retina. As a result, individuals with cataracts frequently experience a loss of vision. There is no known way to reverse the damage caused by cataracts, although the complete removal and replacement of the affected lens with an artificial lens can restore an individual’s vision. The two most common procedures for cataract extraction are called ICCE (intracapsular cataract extraction) and ECCE (extracapsular cataract extraction). Both of these procedures are typically done under a local anesthetic on an out-patient basis, so cataract surgery patients are free to go home the same day.</p>
+                  <p>Extra-capsular surgery involves the removal of the affected lens while leaving the majority of the elastic lens capsule intact. This allows for the direct implantation of an intraocular lens into the lens capsule. Extracapsular surgery may be performed using one of two methods: conventional ECCE or phacoemulsification. Conventional ECCE involves making a small incision into the cornea or the sclera of the eye.</p>
+                </div>
+                <div class="group-show_admin">
+                  <div class="show-admin_header">Group admin</div>
+                  <div class="show-admin">
+                    <div class="show-admin_img"></div>
+                    <div class="show-admin_text">
+                      <span class="show-admin_name">Jacob Halland</span>
+                      <br>
+                      <span class="show-admin_title">MD PhD</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <button class="group-show_join-btn">Ask to join</button>
+            <div class="group-show_expand_wrapper">
+              <img src="img/down-arrow.svg" class="group-show_expand" alt="">
+              <img src="img/up-arrow.svg" class="group-hide_expand hide-arrow" alt="">
+            </div>
+          </div>
+
+          <div class="group-settings col-sm-3">
+            <div>
+              <span>Group settings</span>
+              <ul>
+                <li><a href="#">Leave Group</a></li>
+                <li><a href="#">Invite members</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="group-conversation_user_post col-xs-12 col-sm-9 col-md-9">
+            <div class="post-show_user">
+              <div class="post-show_img"></div>
+              <div class="post-show_text">
+                <span class="post-show_name">Jacob Halland</span>
+                <br>
+                <span class="post-show_title">MD PhD</span>
+              </div>
+            </div>
+            <input type="text" placeholder="Post a question in Novartis">
+          </div>
+
+        </div>
+          <div class="row">
+            <div class="group-conversation col-xs-12 col-sm-9 col-md-9">
+
+              <div class="group-question">
+
+                <div class="group-question_left">
+                  <div class="post-show_user">
+                    <div class="post-show_img"></div>
+                    <div class="post-show_text">
+                      <span class="post-show_name">Jacob Halland</span>
+                      <br>
+                      <span class="post-show_title">MD PhD</span>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="post-info">
+                    01 jan 2016 12:23 pm <br>
+                    in <a href="#">Novartis</a>
+                  </div>
+                </div>
+
+                <div class="group-question_right">
+                  <div class="group-question_activity">
+                    <div><img src="img/follow-green.svg" alt="">1</div>
+                    <div><img src="img/comment-blue.svg" alt="">13</div>
+                    <div><img src="img/forward-green.svg" alt="">1</div>
+                  </div>
+                  <div class="group-question_header">
+                    Cataract What Causes It?
+                  </div>
+                  <div class="group-question_text">
+                  If you are a male over the age of 40 and are suffering from weakness, impotence, pain, stiffness, drooping muscles, depression, anxiety, or heat intolerance, you may be experiencing "andropause".
+                  </div>
+
+                </svg>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+
+    </div>
+    <script src="js/expandGroup.js"></script>
+  </body>
+</html>
