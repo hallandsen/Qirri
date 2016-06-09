@@ -264,7 +264,61 @@ span.date {
   height: 50px;
 }
 
+@media (max-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+  .page-wrapper {
+    padding:0 15px;
+  }
+  .group-show {
+    max-height: 335px;
+  }
+  .expand-group {
+    transition: max-height 0.35s ease-out;
+    max-height: 3000px;
+  }
+  .group-show_right {
+    padding:0;
+  }
+  .group-show_wrapper{
+    padding:0 20px;
+  }
+  .group-settings {
+    display: inline-block;
+  }
+}
 
-
-
-
+@media (max-width: 768px) {
+  .group-show_right h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .group-question_left, .group-question_right {
+    width:100%;
+  }
+  .group-question_activity {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .group-question_header {
+    display: inline-block;
+    float: left;
+  }
+  .post-show_user {
+    margin-bottom: 10px;
+  }
+  .post-info {
+    margin-top: 15px;
+  }
+  .group-question_left br {
+    display: none;
+  }
+  .group-comment{
+    padding:0 20px;
+  }
+  .group-comment_reactions {
+    float:left;
+    margin-bottom:20px;
+  }
+}
