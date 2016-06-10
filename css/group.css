@@ -1,3 +1,7 @@
+*:focus {
+  outline:none;
+}
+
 .group-show {
   background-color: #E8580F;
   color:white;
@@ -230,6 +234,11 @@
   font-weight: 500;
 }
 
+.group-comment, .group-user_comment {
+  padding-right: 40px;
+  display: inline-block;
+}
+
 .comment-header {
   margin:30px 0 20px;
   display: inline-block;
@@ -251,7 +260,7 @@
 }
 
 .group-comment_text {
-  padding: 0 40px 20px 0
+  padding: 0 0 20px 0
 }
 
 span.date {
@@ -262,6 +271,93 @@ span.date {
 
 .empty-row {
   height: 50px;
+}
+
+.group-expand_comments {
+  display: inline-block;
+  width: 100%;
+  padding-right: 40px;
+}
+
+.group-user_comment {
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.user-comment_input {
+  position: relative;
+}
+
+.user-comment_input .post-show_img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height:35px;
+  width: 35px;
+}
+
+.comment-top_bar {
+  height: 70px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  right:1px;
+  background-color: white;
+  display: none;
+}
+
+.comment-bottom_bar {
+  height: 70px;
+  background-color: white;
+  display: none;
+
+}
+.user-comment_input {
+  border: 1px solid #DDDDDD;
+  background-color: white;
+}
+.user-comment_input textarea {
+  width: 100%;
+  height: 60px;
+  padding:20px;
+  padding-left: 70px;
+  border: none;
+  resize: none;
+}
+
+.comment-input_name {
+  position: absolute;
+  top: 22px;
+  left: 70px;
+  align-items: center;
+  font-weight: 500;
+  color:#00BBFE;
+  display: none;
+}
+
+.comment-input_media {
+  padding: 0 15px 15px;
+}
+.comment-input_media img {
+  height:30px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.comment_input-expanded textarea {
+  padding: 0px 15px 50px 15px;
+  height:235px;
+}
+
+.comment_input-expanded .comment-input_name,
+.comment_input-expanded .comment-bottom_bar {
+  display: initial;
+}
+
+.comment_input-expanded .comment-top_bar {
+  display: flex;
+  align-items: center;
+  position: initial;
 }
 
 @media (max-width: 992px) {

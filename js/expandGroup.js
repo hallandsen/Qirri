@@ -12,4 +12,8 @@ $(document).ready(function() {
     $('.group-hide_expand').addClass('hide-arrow');
   })
 
+  $('.user-comment_input textarea').focus(function(){
+    $('.user-comment_input').addClass('comment_input-expanded');
+  });
+
 });
