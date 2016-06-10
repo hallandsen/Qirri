@@ -14,8 +14,13 @@ $(document).ready(function() {
 
 //EXPAND COMMENT FIELD
   $('.user-comment_input textarea').focus(function(){
-    $('.user-comment_input').addClass('comment_input-expanded');
+    $(this).parent().addClass('comment_input-expanded');
   });
+
+//COLLAPSE COMMENT FIELD
+  $('.comment-input_collapse').click(function(){
+    $(this).parents('.user-comment_input').removeClass('comment_input-expanded');
+  })
 
 
 //SHOW ALL COMMENTS
