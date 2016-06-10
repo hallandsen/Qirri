@@ -322,6 +322,7 @@ span.date {
 .user-comment_input {
   border: 1px solid #DDDDDD;
   background-color: white;
+  border-radius: 4px;
 }
 
 .input-img_wrap {
@@ -415,6 +416,10 @@ span.date {
 
 .group-comments_show_all {
   display: initial;
+}
+
+.hide-comments > .group-comments_show_all {
+  display: none;
 }
 
 

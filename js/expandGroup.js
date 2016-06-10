@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 //EXPAND COMMENT FIELD
   $('.user-comment_input textarea').focus(function(){
-    $(this).parent().addClass('comment_input-expanded');
+    $(this).parent('.user-comment_input').addClass('comment_input-expanded');
   });
 
 //COLLAPSE COMMENT FIELD
@@ -25,13 +25,14 @@ $(document).ready(function() {
 
 //SHOW ALL COMMENTS
   $('span.show-all_comments').click(function(){
-    $('.group-comments_show_all').removeClass('hide');
+    $(this).parents('.group-more_comments_show').removeClass('hide-comments');
+    //$('.group-comments_show_all').removeClass('hide');
     $('span.show-all_comments').addClass('hide');
     $('span.hide-comments').removeClass('hide');
   });
 
   $('span.hide-comments').click(function(){
-    $('.group-comments_show_all').addClass('hide');
+    $(this).parents('.group-more_comments_show').addClass('hide-comments');
     $('span.show-all_comments').removeClass('hide');
     $('span.hide-comments').addClass('hide');
   });
