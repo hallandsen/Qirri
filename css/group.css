@@ -317,9 +317,11 @@ span.date {
   background-color: white;
 }
 .user-comment_input textarea {
+  display: flex;
   width: 100%;
   height: 60px;
   padding:20px;
+  border-radius: 4px;
   padding-left: 70px;
   border: none;
   resize: none;
@@ -358,6 +360,17 @@ span.date {
   display: flex;
   align-items: center;
   position: initial;
+}
+
+/*SHOW ALL COMMENTS*/
+
+.group-expand_comments {
+  color:#00BBFE;
+  cursor: pointer;
+}
+
+.group-comments_show_all {
+  display: initial;
 }
 
 @media (max-width: 992px) {
