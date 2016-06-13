@@ -26,15 +26,14 @@ $(document).ready(function() {
 //SHOW ALL COMMENTS
   $('span.show-all_comments').click(function(){
     $(this).parents('.group-more_comments_show').removeClass('hide-comments');
-    //$('.group-comments_show_all').removeClass('hide');
-    $('span.show-all_comments').addClass('hide');
-    $('span.hide-comments').removeClass('hide');
+    $(this).siblings('span.hide-comments').removeClass('hide');
+    $(this).addClass('hide');
   });
 
   $('span.hide-comments').click(function(){
     $(this).parents('.group-more_comments_show').addClass('hide-comments');
-    $('span.show-all_comments').removeClass('hide');
-    $('span.hide-comments').addClass('hide');
+    $(this).siblings('span.show-all_comments').removeClass('hide');
+    $(this).addClass('hide');
   });
 
 });

@@ -119,7 +119,9 @@
 
 .group-settings {
   display: flex;
-  justify-content: center;
+  margin-top: 20px;
+  padding-right: 5px;
+  justify-content: flex-end;
 }
 
 .group-settings span {
@@ -136,8 +138,10 @@
   font-weight: 300;
 }
 
-.group-settings a {
+.group-settings a  {
   color:#A5A5A5;
+  font-weight: 300;
+  margin-left: 20px;
 }
 
 /*GROUP CONVERSATION*/
