@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/register.css" rel="stylesheet" />
@@ -34,16 +35,39 @@
         <h2>User information</h2>
         <form action="" class="signup-form">
           <input type="text" placeholder="Degree" class="signup-field signup-degree">
-          <input type="text" placeholder="Therapeutic Areas" class="signup-field signup-areas">
-          <input type="text" placeholder="Country" class="signup-field signup-country">
+          <select name="Therapeutic Areas" class="signup-field signup-areas">
+            <option value="" disabled selected>Therapeutic Areas</option>
+            <option value="lorem">lorem</option>
+            <option value="ipsum">ipsum</option>
+            <option value="lorem">lorem</option>
+            <option value="ipsum">ipsum</option>
+          </select>
+
+          <select name="country" class="signup-field signup-areas">
+            <option value="" disabled selected>Country</option>
+            <option value="ipsum">lorem</option>
+            <option value="lorem">ipsum</option>
+            <option value="ipsum">lorem</option>
+            <option value="lorem">ipsum</option>
+          </select>
         </form>
 
         <div class="success-btns">
-          <a href="index.html">Skip for now</a>
-          <a href="registerVerification.html"><button class="signup-btn">Next</button></a>
+          <div class="skip-sure">
+            <p>Are you sure? If you skip, you will not have full access. You can complete your registration later.</p>
+            <a href="index.html">Yes. Skip for now.</a>
+          </div>
+
+          <div class="skip-btns">
+            <span>Skip for now</span>
+            <a href="registerVerification.html">
+              <button class="signup-btn">Next</button>
+            </a>
+          </div>
         </div>
       </div>
 
     </div>
+  <script src="js/register.js"></script>
   </body>
 </html>

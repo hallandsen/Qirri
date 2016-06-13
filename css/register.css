@@ -1,6 +1,8 @@
 .view {
   display: flex;
   justify-content: center;
+  max-width: initial;
+  margin: 0;
 }
 
 .signup {
@@ -18,6 +20,18 @@ input {
   border: solid 1px #00BBFE;
   padding:20px 20px;
   border-radius: 4px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 5px;
+  display: inline-block;
+  border: solid 1px #00BBFE;
+  padding: 20px 20px;
+  border-radius: 4px;
+  background-color: white;
 }
 
 .signup-names {
@@ -69,7 +83,8 @@ input {
   float:right;
   margin-top: 25px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .success-btns a {
   color: black;
@@ -81,4 +96,24 @@ input {
 
 .success-btns .signup-btn {
   margin:0 0 0 25px;
+}
+
+.skip-btns {
+  display: flex;
+  align-items: center;
+  height: 44px;
+}
+
+.skip-btns span {
+  cursor: pointer;
+}
+
+.skip-sure {
+  width: 50%;
+  padding-top: 10px;
+  visibility: hidden;
+}
+
+.skip-sure a {
+  color:#00BBFE;
 }
