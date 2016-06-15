@@ -8,12 +8,12 @@
   padding:70px 0;
   position: relative;
   max-height:260px;
-  transition: max-height 0.35s ease-out;
+  transition: 0.5s ease-out;
   overflow: hidden;
+
 }
 
 .expand-group {
-  transition: max-height 0.35s ease-out;
   max-height:3000px;
 }
 
@@ -117,31 +117,30 @@
   background-color: white;
 }
 
-.group-settings {
+.group-options {
   display: flex;
   margin-top: 20px;
-  padding-right: 5px;
-  justify-content: flex-end;
+  padding: 0 5px;
+  justify-content: space-between;
 }
 
-.group-settings span {
+.group-options span {
   font-weight: 500;
 }
 
-.group-settings ul {
- list-style: none;
- padding:0;
-}
-
-.group-settings li {
-  margin: 20px 0;
-  font-weight: 300;
-}
-
-.group-settings a  {
+.group-options a  {
   color:#A5A5A5;
   font-weight: 300;
   margin-left: 20px;
+}
+
+.group-tabs a {
+  margin:0 20px 0 0;
+}
+
+.group-options .view-active {
+  color: black;
+  border-bottom: 2px solid black;
 }
 
 /*GROUP CONVERSATION*/
@@ -260,7 +259,6 @@
   border-radius: 30px;
   padding:5px 10px;
   font-size: 1.3em;
-  margin-right: 50px;
 }
 
 .group-comment_reactions img {
@@ -275,11 +273,17 @@
 span.date {
   float: right;
   margin-right: 40px;
+  margin-top: 5px;
   font-size: 0.8em;
 }
 
 .empty-row {
   height: 50px;
+}
+
+.group-comment .group-question_left {
+  display: inline-flex;
+  justify-content: center;
 }
 
 /*USER COMMENT*/
@@ -413,6 +417,10 @@ span.date {
 
 /*SHOW ALL COMMENTS*/
 
+.group-more_comments_show {
+  padding:0 20px;
+}
+
 .group-expand_comments {
   color:#00BBFE;
   cursor: pointer;
@@ -437,6 +445,10 @@ span.date {
   display: none;
 }
 
+.group-articles {
+  margin-top: 50px;
+}
+
 @media (max-width: 992px) {
   .sidebar {
     display: none;
@@ -448,7 +460,6 @@ span.date {
     max-height: 335px;
   }
   .expand-group {
-    transition: max-height 0.35s ease-out;
     max-height: 3000px;
   }
   .group-show_right {
@@ -456,9 +467,6 @@ span.date {
   }
   .group-show_wrapper{
     padding:0 20px;
-  }
-  .group-settings {
-    display: inline-block;
   }
 }
 
@@ -484,6 +492,11 @@ span.date {
   .post-info {
     margin-top: 15px;
   }
+
+  .group-comment .group-question_left {
+    display: inline-block;
+  }
+
   .group-question_left br {
     display: none;
   }
@@ -493,5 +506,24 @@ span.date {
   .group-comment_reactions {
     float:left;
     margin-bottom:20px;
+  }
+  .post-info{
+    margin:0 0 15px;
+    width: 100%;
+  }
+  .group-conversation_user_post .post-show_text {
+    display: none;
+  }
+  .group-conversation_user_post input, .group-question_right {
+    width: 80%;
+  }
+  .group-question_right {
+    width: 100%;
+  }
+  .post-show_user .post-show_img {
+    margin-right: 15px;
+  }
+  span.date {
+    margin-right:0;
   }
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/groups.css" rel="stylesheet" />
@@ -14,10 +15,15 @@
 
   <body class="container-fluid">
 
-    <nav class="navbar">
-      <div class="nav-logo">
-        <img src="img/screenshot-logo.png" alt="">
+        <nav class="navbar">
+      <div class="nav-sm_menu">
+        <img src="img/menu.svg" id="sm-menu_toggle" alt="">
       </div>
+
+      <div class="nav-logo">
+        <a href="index.html"><img src="img/screenshot-logo.png" alt=""></a>
+      </div>
+
         <div class="nav-profile">
         <!--   <div class="nav-question">
             Post a question
@@ -28,9 +34,58 @@
           <a href="login.html">Sign in</a>
           <a href="register.html">Register</a>
         </div>
+
+        <div class="sm-menu_container">
+          <div class="sidebar">
+          <img src="img/close-blue.svg" id="sm-menu_close" alt="">
+
+            <div class="questions">
+              <div class="quesitons-header">
+                Questions
+              </div>
+              <ul>
+                <li><a href="empty.html">Most recent</a></li>
+                <li><a href="empty.html">Discover</a></li>
+                <li><a href="empty.html">Following</a></li>
+              </ul>
+            </div>
+
+            <div class="articles">
+              <div class="articles-header">
+                Articles
+              </div>
+              <ul>
+                <li><a href="articles.html">Latest</a></li>
+                <li><a href="articles.html">Groups</a></li>
+                <li><a href="articles.html">People</a></li>
+              </ul>
+            </div>
+
+            <div class="groups">
+              <div class="groups-header">
+                Groups
+              </div>
+              <ul class="groups-list">
+                <li><a href="group.html">  <img src="img/cardiology.png" alt="">       Cardiology</a></li>
+                <li><a href="group.html">  <img src="img/hovedstaden.png" alt="">      Rigshospitalet</a></li>
+                <li><a href="group.html">  <img src="img/novartis.png" alt="">         Novartis</a></li>
+                <li><a href="group.html">  <img src="img/hjerteforeningen.png" alt=""> Hjerteforeningen</a></li>
+                <li><a href="group.html">  <img src="img/cv-expert.png" alt="">        CV Expert</a></li>
+              </ul>
+
+              <ul class="groups-options">
+                <li> <a class="sidebar-active" href="index.html">Discover new Groups</a> </li>
+                <li> <a href="empty.html">Create Group</a> </li>
+              </ul>
+            </div>
+
+            </div>
+        </div>
+
     </nav>
 
     <div class="content-wrapper">
+      <!-- SIDEBAR BEGIN -->
       <div class="sidebar col-xs-6 col-sm-3 col-md-3">
         <div class="questions">
           <div class="quesitons-header">
@@ -40,6 +95,17 @@
             <li><a href="empty.html">Most recent</a></li>
             <li><a href="empty.html">Discover</a></li>
             <li><a href="empty.html">Following</a></li>
+          </ul>
+        </div>
+
+        <div class="articles">
+          <div class="articles-header">
+            Articles
+          </div>
+          <ul>
+            <li><a href="articles.html">Latest</a></li>
+            <li><a href="articles.html">Groups</a></li>
+            <li><a href="articles.html">People</a></li>
           </ul>
         </div>
 
@@ -56,15 +122,25 @@
           </ul>
 
           <ul class="groups-options">
-            <li> <a class="sidebar-active" href="">Discover new Groups</a> </li>
-            <li> <a href="">Create Group</a> </li>
+            <li> <a class="sidebar-active" href="index.html">Discover new Groups</a> </li>
+            <li> <a href="empty.html">Create Group</a> </li>
           </ul>
         </div>
       </div>
+<!-- SIDEBAR END -->
 
-      <div class="view col-xs-6 col-sm-8 col-md-8 col-lg-7">
+      <div class="view col-xs-12 col-sm-12 col-md-8 col-lg-7">
 
         <div class="discover-menu col-xs-12">
+          <div class="sm-sort_discover_menu">
+            <span>Sort by</span>
+            <select name="discover-menu_sort" id="discover-menu_sort">
+              <option value="Recommendations">Recommendations</option>
+              <option value="Public Groups">Public Groups</option>
+              <option value="Private Groups">Private Groups</option>
+              <option value="Search">Search</option>
+            </select>
+          </div>
           <ul>
             <li><a class="view-active" href="">Recommendations</a></li>
             <li><a href="">Public Groups</a></li>
@@ -78,12 +154,12 @@
           <div class="discover-show_group">
             <div class="discover-show_group_img">
               <img src="img/allergy.png" alt="">
-            </div>
-            <div class="discover-show_group_text">
-              <h2>Allergy</h2>
               <div class="show-group_info">
+                <h2>Allergy</h2>
                 1.249 members · Public Group
               </div>
+            </div>
+            <div class="discover-show_group_text">
               <div class="show-group_description">
                 Asthma allergy is the number one form of allergy today. And since asthma allergy is inherited, one can get it at a young age. The diagnosis process for asthma allergy is a simple and very straightforward test and will immediately determine if you do have asthma and not just some other type...
               </div>
@@ -94,12 +170,12 @@
           <div class="discover-show_group">
             <div class="discover-show_group_img">
               <img src="img/cardiology.png" alt="">
-            </div>
-            <div class="discover-show_group_text">
-              <h2>Cardiology</h2>
               <div class="show-group_info">
+              <h2>Cardiology</h2>
                 234 members · Private Group
               </div>
+            </div>
+            <div class="discover-show_group_text">
               <div class="show-group_description">
                 Cataract surgery involves the surgical removal of the lens of an eye that has formed a cataract. Cataract extraction is the one of the most common eye surgeries performed and is widely regarded as being one of the safest procedures in the medical community.
               </div>
@@ -110,28 +186,29 @@
           <div class="discover-show_group">
             <div class="discover-show_group_img">
               <img src="img/hovedstaden.png" alt="">
-            </div>
-            <div class="discover-show_group_text">
-              <h2>Rigshospitalet</h2>
               <div class="show-group_info">
+                <h2>Rigshospitalet</h2>
                 321 members · Private Group
               </div>
+            </div>
+            <div class="discover-show_group_text">
               <div class="show-group_description">
                 Most people are unaware that the use of Botox for the prevention of migraine headaches came about purely by accident. It all happened through the use of Botox by plastic surgeons. As the studies continue the effects and safety issues involving this medication should become more clear...
               </div>
               <button class="show-group_join_btn">Ask to join</button>
             </div>
+
           </div>
 
           <div class="discover-show_group">
             <div class="discover-show_group_img">
               <img src="img/novartis.png" alt="">
-            </div>
-            <div class="discover-show_group_text">
-              <h2>Novartis</h2>
               <div class="show-group_info">
+              <h2>Novartis</h2>
                 467 members · Private Group
               </div>
+            </div>
+            <div class="discover-show_group_text">
               <div class="show-group_description">
                 Most people are unaware that the use of Botox for the prevention of migraine headaches came about purely by accident. It all happened through the use of Botox by plastic surgeons. As the studies continue the effects and safety issues involving this medication should become more clear...
               </div>
@@ -142,12 +219,12 @@
           <div class="discover-show_group">
             <div class="discover-show_group_img">
               <img src="img/hjerteforeningen.png" alt="">
-            </div>
-            <div class="discover-show_group_text">
-              <h2>Hjerteforeningen</h2>
               <div class="show-group_info">
+                <h2>Hjerteforeningen</h2>
                 256 members · Private Group
               </div>
+            </div>
+            <div class="discover-show_group_text">
               <div class="show-group_description">
                 Most people are unaware that the use of Botox for the prevention of migraine headaches came about purely by accident. It all happened through the use of Botox by plastic surgeons. As the studies continue the effects and safety issues involving this medication should become more clear...
               </div>
@@ -159,5 +236,7 @@
       </div>
 
     </div>
+
+    <script src="js/menuToggle.js"></script>
   </body>
 </html>

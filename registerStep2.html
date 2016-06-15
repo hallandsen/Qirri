@@ -7,7 +7,9 @@
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="vendor/select2/css/select2.min.css" />
     <link href="css/register.css" rel="stylesheet" />
+
 
     <title>Qirri</title>
   </head>
@@ -15,19 +17,71 @@
   <body class="container-fluid">
 
     <nav class="navbar">
-      <div class="nav-logo">
-        <img src="img/screenshot-logo.png" alt="">
+      <div class="nav-sm_menu">
+        <img src="img/menu.svg" id="sm-menu_toggle" alt="">
       </div>
-        <div class="nav-profile">
-          <!-- <div class="nav-question">
-            Post a question
+
+      <div class="nav-logo">
+        <a href="index.html"><img src="img/screenshot-logo.png" alt=""></a>
+      </div>
+
+      <div class="nav-profile">
+      <!--   <div class="nav-question">
+          Post a question
+        </div>
+        <div class="nav-profile-img"></div>
+      </div> -->
+      <div class="nav-register">
+        <a href="login.html">Sign in</a>
+        <a href="register.html">Register</a>
+      </div>
+
+      <div class="sm-menu_container">
+        <div class="sidebar">
+        <img src="img/close-blue.svg" id="sm-menu_close" alt="">
+
+          <div class="questions">
+            <div class="quesitons-header">
+              Questions
+            </div>
+            <ul>
+              <li><a href="empty.html">Most recent</a></li>
+              <li><a href="empty.html">Discover</a></li>
+              <li><a href="empty.html">Following</a></li>
+            </ul>
           </div>
-          <div class="nav-profile-img"></div> -->
-        <div class="nav-register">
-          <a href="login.html">Sign in</a>
-          <a href="register.html">Register</a>
+
+          <div class="articles">
+            <div class="articles-header">
+              Articles
+            </div>
+            <ul>
+              <li><a href="articles.html">Latest</a></li>
+              <li><a href="articles.html">Groups</a></li>
+              <li><a href="articles.html">People</a></li>
+            </ul>
+          </div>
+
+          <div class="groups">
+            <div class="groups-header">
+              Groups
+            </div>
+            <ul class="groups-list">
+              <li><a href="group.html">  <img src="img/cardiology.png" alt="">       Cardiology</a></li>
+              <li><a href="group.html">  <img src="img/hovedstaden.png" alt="">      Rigshospitalet</a></li>
+              <li><a href="group.html">  <img src="img/novartis.png" alt="">         Novartis</a></li>
+              <li><a href="group.html">  <img src="img/hjerteforeningen.png" alt=""> Hjerteforeningen</a></li>
+              <li><a href="group.html">  <img src="img/cv-expert.png" alt="">        CV Expert</a></li>
+            </ul>
+
+            <ul class="groups-options">
+              <li> <a href="index.html">Discover new Groups</a> </li>
+              <li> <a href="empty.html">Create Group</a> </li>
+            </ul>
+          </div>
+
         </div>
-        </div>
+      </div>
     </nav>
 
     <div class="view col-xs-12">
@@ -35,24 +89,16 @@
         <h2>User information</h2>
         <form action="" class="signup-form">
           <input type="text" placeholder="Degree" class="signup-field signup-degree">
-          <select name="Therapeutic Areas" class="signup-field signup-areas">
-            <option value="" disabled selected>Therapeutic Areas</option>
-            <option value="lorem">lorem</option>
-            <option value="ipsum">ipsum</option>
-            <option value="lorem">lorem</option>
-            <option value="ipsum">ipsum</option>
+          <select id="areas" multiple="multiple">
+            <option value=""></option>
           </select>
-
-          <select name="country" class="signup-field signup-areas">
-            <option value="" disabled selected>Country</option>
-            <option value="ipsum">lorem</option>
-            <option value="lorem">ipsum</option>
-            <option value="ipsum">lorem</option>
-            <option value="lorem">ipsum</option>
+          <select type="text" id="country">
+            <option value=""></option>
           </select>
         </form>
 
         <div class="success-btns">
+
           <div class="skip-sure">
             <p>Are you sure? If you skip, you will not have full access. You can complete your registration later.</p>
             <a href="index.html">Yes. Skip for now.</a>
@@ -60,14 +106,14 @@
 
           <div class="skip-btns">
             <span>Skip for now</span>
-            <a href="registerVerification.html">
-              <button class="signup-btn">Next</button>
-            </a>
+            <a href="registerVerification.html"><button class="signup-btn">Next</button></a>
           </div>
         </div>
       </div>
 
     </div>
-  <script src="js/register.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/menuToggle.js"></script>
+    <script src="vendor/select2/js/select2.full.min.js" ></script>
   </body>
 </html>

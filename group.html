@@ -15,23 +15,76 @@
   <body class="container-fluid">
 
     <nav class="navbar">
-      <div class="nav-logo">
-        <img src="img/screenshot-logo.png" alt="">
+      <div class="nav-sm_menu">
+        <img src="img/menu.svg" id="sm-menu_toggle" alt="">
       </div>
+
+      <div class="nav-logo">
+        <a href="index.html"><img src="img/screenshot-logo.png" alt=""></a>
+      </div>
+
         <div class="nav-profile">
-          <!-- <div class="nav-question">
+        <!--   <div class="nav-question">
             Post a question
           </div>
-          <div class="nav-profile-img"></div> -->
+          <div class="nav-profile-img"></div>
+        </div> -->
         <div class="nav-register">
           <a href="login.html">Sign in</a>
           <a href="register.html">Register</a>
         </div>
-        </div>
-    </nav>
 
+        <div class="sm-menu_container">
+          <div class="sidebar">
+          <img src="img/close-blue.svg" id="sm-menu_close" alt="">
+
+            <div class="questions">
+              <div class="quesitons-header">
+                Questions
+              </div>
+              <ul>
+                <li><a href="empty.html">Most recent</a></li>
+                <li><a href="empty.html">Discover</a></li>
+                <li><a href="empty.html">Following</a></li>
+              </ul>
+            </div>
+
+            <div class="articles">
+              <div class="articles-header">
+                Articles
+              </div>
+              <ul>
+                <li><a href="articles.html">Latest</a></li>
+                <li><a href="articles.html">Groups</a></li>
+                <li><a href="articles.html">People</a></li>
+              </ul>
+            </div>
+
+            <div class="groups">
+              <div class="groups-header">
+                Groups
+              </div>
+              <ul class="groups-list">
+                <li><a href="group.html">  <img src="img/cardiology.png" alt="">       Cardiology</a></li>
+                <li><a href="group.html">  <img src="img/hovedstaden.png" alt="">      Rigshospitalet</a></li>
+                <li><a class="sidebar-active" href="group.html">  <img src="img/novartis.png" alt="">         Novartis</a></li>
+                <li><a href="group.html">  <img src="img/hjerteforeningen.png" alt=""> Hjerteforeningen</a></li>
+                <li><a href="group.html">  <img src="img/cv-expert.png" alt="">        CV Expert</a></li>
+              </ul>
+
+              <ul class="groups-options">
+                <li> <a href="index.html">Discover new Groups</a> </li>
+                <li> <a href="empty.html">Create Group</a> </li>
+              </ul>
+            </div>
+
+            </div>
+        </div>
+
+    </nav>
     <div class="content-wrapper">
 
+      <!-- SIDEBAR BEGIN -->
       <div class="sidebar col-xs-6 col-sm-3 col-md-3">
         <div class="questions">
           <div class="quesitons-header">
@@ -44,6 +97,17 @@
           </ul>
         </div>
 
+        <div class="articles">
+          <div class="articles-header">
+            Articles
+          </div>
+          <ul>
+            <li><a href="articles.html">Latest</a></li>
+            <li><a href="articles.html">Groups</a></li>
+            <li><a href="articles.html">People</a></li>
+          </ul>
+        </div>
+
         <div class="groups">
           <div class="groups-header">
             Groups
@@ -51,17 +115,18 @@
           <ul class="groups-list">
             <li><a href="group.html">  <img src="img/cardiology.png" alt="">       Cardiology</a></li>
             <li><a href="group.html">  <img src="img/hovedstaden.png" alt="">      Rigshospitalet</a></li>
-            <li><a href="group.html" class="sidebar-active">  <img src="img/novartis.png" alt="">         Novartis</a></li>
+            <li><a class="sidebar-active" href="group.html">  <img src="img/novartis.png" alt="">         Novartis</a></li>
             <li><a href="group.html">  <img src="img/hjerteforeningen.png" alt=""> Hjerteforeningen</a></li>
             <li><a href="group.html">  <img src="img/cv-expert.png" alt="">        CV Expert</a></li>
           </ul>
 
           <ul class="groups-options">
             <li> <a href="index.html">Discover new Groups</a> </li>
-            <li> <a href="">Create Group</a> </li>
+            <li> <a href="empty.html">Create Group</a> </li>
           </ul>
         </div>
       </div>
+<!-- SIDEBAR END -->
 
       <div class="view col-xs-12 col-sm-12 col-md-8 col-lg-7">
 
@@ -90,7 +155,7 @@
                   <div class="show-admin">
                     <div class="show-admin_img"></div>
                     <div class="show-admin_text">
-                      <span class="show-admin_name">Jacob Halland</span>
+                      <span class="show-admin_name">Jens Jensen</span>
                       <br>
                       <span class="show-admin_title">MD PhD</span>
                     </div>
@@ -107,13 +172,14 @@
           </div>
         </div>
 <!-- ROW END -->
-        <div class="group-settings col-sm-12">
+        <div class="group-options">
+          <div class="group-tabs">
+            <span ><a href="group.html" class="view-active">Questions</a></span>
+            <span><a href="groupArticles.html">Articles</a></span>
+          </div>
           <div>
-            <span>Group settings</span>
-<!--             <ul> -->
-              <span><a href="#">Leave Group</a></span>
-              <span><a href="#">Invite members</a></span>
-<!--             </ul> -->
+            <span><a href="#">Leave Group</a></span>
+            <span><a href="#">Invite members</a></span>
           </div>
         </div>
 <!-- SHOW GROUP END -->
@@ -125,7 +191,7 @@
             <div class="post-show_user">
               <div class="post-show_img"></div>
               <div class="post-show_text">
-                <span class="post-show_name">Jacob Halland</span>
+                <span class="post-show_name">Jens Jensen</span>
                 <br>
                 <span class="post-show_title">MD PhD</span>
               </div>
@@ -140,7 +206,6 @@
 <!-- GROUP CONVERSATION -->
         <div class="group-conversation">
 
-
 <!-- QUESTION -->
 
           <div class="row">
@@ -151,7 +216,7 @@
                   <div class="post-show_user .post-show_user_full_width">
                     <div class="post-show_img"></div>
                     <div class="post-show_text">
-                      <span class="post-show_name"><a href="profile.html">Jacob Halland</a></span>
+                      <span class="post-show_name"><a href="profile.html">Jens Jensen</a></span>
                       <br>
                       <span class="post-show_title">MD PhD</span>
                     </div>
@@ -165,9 +230,9 @@
 
                 <div class="group-question_right">
                   <div class="group-question_activity">
-                    <div><img src="img/follow-green.svg" alt="">1</div>
-                    <div><img src="img/comment-blue.svg" alt="">13</div>
-                    <div><img src="img/forward-green.svg" alt="">1</div>
+                    <div><img src="img/follow.svg" alt="">1</div>
+                    <div><img src="img/comment.svg" alt="">13</div>
+                    <div><img src="img/forward.svg" alt="">1</div>
                   </div>
                   <div class="group-question_header">
                     Cataract What Causes It?
@@ -209,7 +274,7 @@
                     <div class="post-show_user">
                       <div class="post-show_img"></div>
                       <div class="post-show_text">
-                        <span class="post-show_name"><a href="profile.html">Jacob Halland</a></span>
+                        <span class="post-show_name"><a href="profile.html">Jens Jensen</a></span>
                         <br>
                         <span class="post-show_title">MD PhD</span>
                       </div>
@@ -263,7 +328,7 @@
                         <div class="post-show_user">
                           <div class="post-show_img"></div>
                           <div class="post-show_text">
-                            <span class="post-show_name"><a href="profile.html">Jacob Halland</a></span>
+                            <span class="post-show_name"><a href="profile.html">Jens Jensen</a></span>
                             <br>
                             <span class="post-show_title">MD PhD</span>
                           </div>
@@ -305,7 +370,7 @@
                       <div class="post-show_img"></div>
                     </div>
                     <div class="comment-top_bar">
-                      <div class="comment-input_name">Jacob Halland</div>
+                      <div class="comment-input_name">Jens Jensen</div>
                       <span class="comment-input_collapse">
                         <img src="img/close.svg" alt="">
                       </span>
@@ -349,7 +414,7 @@
                   <div class="post-show_user .post-show_user_full_width">
                     <div class="post-show_img"></div>
                     <div class="post-show_text">
-                      <span class="post-show_name"><a href="profile.html">Jacob Halland</a></span>
+                      <span class="post-show_name"><a href="profile.html">Jens Jensen</a></span>
                       <br>
                       <span class="post-show_title">MD PhD</span>
                     </div>
@@ -363,9 +428,9 @@
 
                 <div class="group-question_right">
                   <div class="group-question_activity">
-                    <div><img src="img/follow-green.svg" alt="">1</div>
-                    <div><img src="img/comment-blue.svg" alt="">13</div>
-                    <div><img src="img/forward-green.svg" alt="">1</div>
+                    <div><img src="img/follow.svg" alt="">1</div>
+                    <div><img src="img/comment.svg" alt="">13</div>
+                    <div><img src="img/forward.svg" alt="">1</div>
                   </div>
                   <div class="group-question_header">
                     Cataract What Causes It?
@@ -407,7 +472,7 @@
                     <div class="post-show_user">
                       <div class="post-show_img"></div>
                       <div class="post-show_text">
-                        <span class="post-show_name"><a href="profile.html">Jacob Halland</a></span>
+                        <span class="post-show_name"><a href="profile.html">Jens Jensen</a></span>
                         <br>
                         <span class="post-show_title">MD PhD</span>
                       </div>
@@ -463,7 +528,7 @@
                         <div class="post-show_user">
                           <div class="post-show_img"></div>
                           <div class="post-show_text">
-                            <span class="post-show_name"><a href="profile.html">Jacob Halland</a></span>
+                            <span class="post-show_name"><a href="profile.html">Jens Jensen</a></span>
                             <br>
                             <span class="post-show_title">MD PhD</span>
                           </div>
@@ -509,7 +574,7 @@
                     </div>
                     <div class="comment-top_bar">
                       <div class="comment-input_name">
-                        Jacob Halland
+                        Jens Jensen
                       </div>
                       <span class="comment-input_collapse">
                         <img src="img/close.svg" alt="">
@@ -542,5 +607,6 @@
       </div>
     </div>
     <script src="js/expandGroup.js"></script>
+    <script src="js/menuToggle.js"></script>
   </body>
 </html>

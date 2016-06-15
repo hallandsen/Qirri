@@ -22,16 +22,8 @@ input {
   border-radius: 4px;
 }
 
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 5px;
-  display: inline-block;
-  border: solid 1px #00BBFE;
-  padding: 20px 20px;
-  border-radius: 4px;
-  background-color: white;
+*:focus {
+  outline: none;
 }
 
 .signup-names {
@@ -72,10 +64,76 @@ select {
   padding: 10px 40px;
 }
 
-/*.signup-btn:hover {
-  background-color: #00BBFE;
-  color:white;
-}*/
+/*TYPEAHEAD STYLING*/
+.signup .select2-container {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: flex;
+  align-items: center;
+  height: 63px;
+  border: solid 1px #00BBFE;
+  padding: 20px 20px !important;;
+  border-radius: 4px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+span.selection {
+  width: 100%!important;;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  display: none;
+/*  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 10px;*/
+}
+
+.select2-container--default .select2-selection--single {
+  border:none;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  display: inline-block;
+  border: solid 1px #00BBFE;
+  padding: 20px 28px;
+  border-radius: 4px;
+  font-size: 1.1em;
+}
+
+.select2-container--open .countries {
+  border:none;
+  top: -63px;
+}
+/*REMOVE BORDERS FROM #AREAS*/
+.select2-container--default.select2-container--focus .select2-selection--multiple,
+.select2-container--open .select2-dropdown--below {
+  border:none;
+}
+
+.select2-container--default .select2-selection--multiple {
+  border:none;
+}
+
+.select2-search--dropdown {
+  padding:0;
+  z-index: 2;
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+  border: 1px solid #00BBFE;
+  border-top: none;
+  background: none;
+  border: 1px solid #00BBFE;
+  border-top: none;
+  margin-top: -2px;
+  font-size: 1.1em;
+}
+
+.select2-container--default .select2-results>.select2-results__options li {
+  padding-left: 20px;
+}
 
 /*SUCCESS*/
 
@@ -116,4 +174,15 @@ select {
 
 .skip-sure a {
   color:#00BBFE;
+}
+
+/*TYPEAHEAD*/
+select#country, select#areas {
+  width: 100%;
+}
+
+.tt-open {
+  background-color: white;
+  width: 100%;
+  border: solid 1px #00BBFE;
 }

@@ -1,0 +1,105 @@
+.articles-teaser {
+  display: inline-flex;
+  margin-bottom: 80px;
+}
+.articles-teaser_left {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border:solid 2px;
+}
+
+.articles-teaser_left_picture {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  border-radius: 50%;
+  border:solid 2px;
+  border:none;
+}
+
+.articles-teaser_left_picture img {
+  width: 300px;
+}
+
+.novarits {
+  background: url(../img/novartis.png) no-repeat center;
+  background-size: 70px;
+  border-color: #E8580F;
+}
+
+.cardiology {
+  background: url(../img/cardiology.png) no-repeat center;
+  background-size: 70px;
+  border-color: #D71F2A;
+}
+
+.articles-teaser_user {
+  background: url(../img/user-stock.jpg) no-repeat center;
+  background-size: cover;
+  border: none;
+}
+
+
+
+.picture {
+  /*background: url(../img/article-stock.jpg) no-repeat center;
+  background-size: cover;*/
+}
+
+
+.articles-teaser_right {
+  padding-left: 40px;
+  display: inline-block;
+}
+
+.articles-teaser_right h3 {
+  margin: 0;
+}
+
+h3 a {
+  color: black;
+}
+
+.articles-teaser_info {
+  margin: 10px 0;
+  display: inline-block;
+}
+
+span.date {
+  font-size: 1em;
+  margin:0;
+}
+
+.articles-teaser_info  .group {
+  color: #00BBFE;
+  cursor: pointer;
+}
+
+.group-question_activity {
+  margin-top: 10px;
+}
+
+.group-question_activity img {
+  height:25px;
+  width: 25px;
+  margin-right: 4px;
+}
+span.divider {
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+@media (max-width: 650px) {
+  .articles-teaser {
+    display: inline-block;
+  }
+  .articles-teaser_left {
+    margin-bottom: 10px;
+  }
+  .articles-teaser_right {
+    width: 100%;
+    padding:0;
+  }
+}

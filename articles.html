@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/groups.css" rel="stylesheet" />
+    <link href="css/articles.css" rel="stylesheet" />
+
+
+    <title>Qirri</title>
+  </head>
+
+  <body class="container-fluid">
+<!-- NAV BEGIN -->
+    <nav class="navbar">
+      <div class="nav-sm_menu">
+        <img src="img/menu.svg" id="sm-menu_toggle" alt="">
+      </div>
+
+      <div class="nav-logo">
+        <a href="index.html"><img src="img/screenshot-logo.png" alt=""></a>
+      </div>
+
+        <div class="nav-profile">
+        <!--   <div class="nav-question">
+            Post a question
+          </div>
+          <div class="nav-profile-img"></div>
+        </div> -->
+        <div class="nav-register">
+          <a href="login.html">Sign in</a>
+          <a href="register.html">Register</a>
+        </div>
+
+        <div class="sm-menu_container">
+          <div class="sidebar">
+          <img src="img/close-blue.svg" id="sm-menu_close" alt="">
+
+            <div class="questions">
+              <div class="quesitons-header">
+                Questions
+              </div>
+              <ul>
+                <li><a href="empty.html">Most recent</a></li>
+                <li><a href="empty.html">Discover</a></li>
+                <li><a href="empty.html">Following</a></li>
+              </ul>
+            </div>
+
+            <div class="articles">
+              <div class="articles-header">
+                Articles
+              </div>
+              <ul>
+                <li><a class="sidebar-active" href="articles.html">Latest</a></li>
+                <li><a href="articles.html">Groups</a></li>
+                <li><a href="articles.html">People</a></li>
+              </ul>
+            </div>
+
+            <div class="groups">
+              <div class="groups-header">
+                Groups
+              </div>
+              <ul class="groups-list">
+                <li><a href="group.html">  <img src="img/cardiology.png" alt="">       Cardiology</a></li>
+                <li><a href="group.html">  <img src="img/hovedstaden.png" alt="">      Rigshospitalet</a></li>
+                <li><a href="group.html">  <img src="img/novartis.png" alt="">         Novartis</a></li>
+                <li><a href="group.html">  <img src="img/hjerteforeningen.png" alt=""> Hjerteforeningen</a></li>
+                <li><a href="group.html">  <img src="img/cv-expert.png" alt="">        CV Expert</a></li>
+              </ul>
+
+              <ul class="groups-options">
+                <li> <a href="index.html">Discover new Groups</a> </li>
+                <li> <a href="empty.html">Create Group</a> </li>
+              </ul>
+            </div>
+
+            </div>
+        </div>
+
+    </nav>
+<!-- NAV END -->
+    <div class="content-wrapper">
+<!-- SIDEBAR BEGIN -->
+      <div class="sidebar col-xs-6 col-sm-3 col-md-3">
+        <div class="questions">
+          <div class="quesitons-header">
+            Questions
+          </div>
+          <ul>
+            <li><a href="empty.html">Most recent</a></li>
+            <li><a href="empty.html">Discover</a></li>
+            <li><a href="empty.html">Following</a></li>
+          </ul>
+        </div>
+
+        <div class="articles">
+          <div class="articles-header">
+            Articles
+          </div>
+          <ul>
+            <li><a class="sidebar-active" href="articles.html">Latest</a></li>
+            <li><a href="articles.html">Groups</a></li>
+            <li><a href="articles.html">People</a></li>
+          </ul>
+        </div>
+
+        <div class="groups">
+          <div class="groups-header">
+            Groups
+          </div>
+          <ul class="groups-list">
+            <li><a href="group.html">  <img src="img/cardiology.png" alt="">       Cardiology</a></li>
+            <li><a href="group.html">  <img src="img/hovedstaden.png" alt="">      Rigshospitalet</a></li>
+            <li><a href="group.html">  <img src="img/novartis.png" alt="">         Novartis</a></li>
+            <li><a href="group.html">  <img src="img/hjerteforeningen.png" alt=""> Hjerteforeningen</a></li>
+            <li><a href="group.html">  <img src="img/cv-expert.png" alt="">        CV Expert</a></li>
+          </ul>
+
+          <ul class="groups-options">
+            <li> <a href="index.html">Discover new Groups</a> </li>
+            <li> <a href="empty.html">Create Group</a> </li>
+          </ul>
+        </div>
+      </div>
+<!-- SIDEBAR END -->
+<!-- VIEW BEGIN -->
+      <div class="view col-xs-12 col-sm-12 col-md-8 col-lg-7">
+
+        <div class="discover-menu col-xs-12">
+          <div class="sm-sort_discover_menu">
+            <span>Sort by</span>
+            <select name="discover-menu_sort" id="discover-menu_sort">
+              <option value="Recommendations">Recommendations</option>
+              <option value="Public Groups">Public Groups</option>
+              <option value="Private Groups">Private Groups</option>
+              <option value="Search">Search</option>
+            </select>
+          </div>
+          <ul>
+            <li><a class="view-active" href="">Latest</a></li>
+            <li><a href="">Groups</a></li>
+            <li><a href="">People</a></li>
+            <li><a href="">Search</a></li>
+          </ul>
+        </div>
+<!-- ARTICLES BEGIN -->
+        <div class="articles">
+<!-- ARTICLE TEASER BEGIN -->
+          <!-- <div class="articles-teaser">
+
+            <a href="article.html">
+              <div class="articles-teaser_left picture">
+                <img src="img/article-stock.jpg" alt="">
+              </div>
+            </a>
+
+            <div class="articles-teaser_right">
+              <h3><a href="article.html">Lorem ipsum dolor</a></h3>
+              <div class="articles-teaser_info">
+                <span class="author">Jens Jensen in </span>
+                <span class="group"><a href="group.html">Novarits</a></span>
+                <span class="divider">·</span>
+                <span class="date">1. Jan 2016</span>
+              </div>
+              <div class="articles-teaser_txt">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </div>
+              <div class="group-question_activity">
+                <div><img src="img/follow.svg" alt="">1</div>
+                <div><img src="img/comment.svg" alt="">2</div>
+                <div><img src="img/forward.svg" alt="">1</div>
+              </div>
+            </div>
+          </div> -->
+<!-- ARTICLE TEASER END -->
+
+<!-- ARTICLE TEASER BEGIN -->
+          <div class="articles-teaser">
+            <a href="article.html">
+              <div class="articles-teaser_left novarits">
+              </div>
+            </a>
+
+            <div class="articles-teaser_right">
+              <h3><a href="article.html">Lorem ipsum dolor</a></h3>
+              <div class="articles-teaser_info">
+                <span class="author">Jens Jensen in </span>
+                <span class="group"><a href="group.html">Novarits</a></span>
+                <span class="divider">·</span>
+                <span class="date">1. Jan 2016</span>
+              </div>
+              <div class="articles-teaser_txt">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </div>
+              <div class="group-question_activity">
+                <div><img src="img/follow.svg" alt="">1</div>
+                <div><img src="img/comment.svg" alt="">2</div>
+                <div><img src="img/forward.svg" alt="">1</div>
+              </div>
+            </div>
+          </div>
+<!-- ARTICLE TEASER END -->
+
+<!-- ARTICLE TEASER BEGIN -->
+          <div class="articles-teaser">
+            <a href="article.html">
+              <div class="articles-teaser_left cardiology">
+              </div>
+            </a>
+
+            <div class="articles-teaser_right">
+              <h3><a href="article.html">Lorem ipsum dolor</a></h3>
+              <div class="articles-teaser_info">
+                <span class="author">Jens Jensen in </span>
+                <span class="group"><a href="group.html">Cardiology</a></span>
+                <span class="divider">·</span>
+                <span class="date">1. Jan 2016</span>
+              </div>
+              <div class="articles-teaser_txt">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </div>
+              <div class="group-question_activity">
+                <div><img src="img/follow.svg" alt="">1</div>
+                <div><img src="img/comment.svg" alt="">2</div>
+                <div><img src="img/forward.svg" alt="">1</div>
+              </div>
+            </div>
+          </div>
+<!-- ARTICLE TEASER END -->
+
+        </div>
+
+      </div>
+
+    </div>
+  <script src="js/menuToggle.js"></script>
+  </body>
+</html>
