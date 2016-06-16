@@ -143,9 +143,10 @@ input, .signup-field, .selectize-control {
 }
 
 .profile-bottom button {
-  margin-top: 20px;
+  margin: 40px 0 20px;
   border-color: #00BBFE;
-  color:#00BBFE;
+  background-color:#00BBFE;
+  color: white;
   padding: 10px 40px;
 }
 

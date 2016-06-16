@@ -111,6 +111,12 @@ input {
   justify-content: flex-end;
 }
 
+.nav-register {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 140px;
+}
+
 .nav-register a {
   margin-left: 20px;
 }
