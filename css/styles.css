@@ -8,6 +8,10 @@ a {
   color:#00BBFE;
 }
 
+input:focus {
+  outline: none;
+}
+
 a:hover, a:focus, a:visited, a:active {
   text-decoration: none;
 }

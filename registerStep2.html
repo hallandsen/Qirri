@@ -7,7 +7,7 @@
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="vendor/select2/css/select2.min.css" />
+    <link href="vendor/selectize/css/selectize.css" rel="stylesheet" />
     <link href="css/register.css" rel="stylesheet" />
 
 
@@ -89,12 +89,8 @@
         <h2>User information</h2>
         <form action="" class="signup-form">
           <input type="text" placeholder="Degree" class="signup-field signup-degree">
-          <select id="areas" multiple="multiple">
-            <option value=""></option>
-          </select>
-          <select type="text" id="country">
-            <option value=""></option>
-          </select>
+          <input type="text" placeholder="Therapeutic areas" id="areas">
+          <input type="text" placeholder="Country" id="country">
         </form>
 
         <div class="success-btns">
@@ -114,6 +110,6 @@
     </div>
     <script src="js/register.js"></script>
     <script src="js/menuToggle.js"></script>
-    <script src="vendor/select2/js/select2.full.min.js" ></script>
+    <script src="vendor/selectize/js/standalone/selectize.min.js" ></script>
   </body>
 </html>

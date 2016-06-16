@@ -7,7 +7,9 @@
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/groups.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="vendor/select2/css/select2.min.css" />
+    <link href="vendor/selectize/css/selectize.css" rel="stylesheet" />
+    <link href="css/profile.css" rel="stylesheet" />
 
 
     <title>Qirri</title>
@@ -63,7 +65,7 @@
               </ul>
 
               <ul class="groups-options">
-                <li> <a class="sidebar-active" href="">Discover new Groups</a> </li>
+                <li> <a href="">Discover new Groups</a> </li>
                 <li> <a href="">Create Group</a> </li>
               </ul>
             </div>
@@ -105,9 +107,11 @@
           <ul class="groups-list">
             <li><a href="group.html">  <img src="img/cardiology.png" alt="">       Cardiology</a></li>
             <li><a href="group.html">  <img src="img/hovedstaden.png" alt="">      Rigshospitalet</a></li>
-            <li><a class="sidebar-active" href="group.html">  <img src="img/novartis.png" alt="">         Novartis</a></li>
-            <li><a href="group.html">  <img src="img/hjerteforeningen.png" alt=""> Hjerteforeningen</a></li>
-            <li><a href="group.html">  <img src="img/cv-expert.png" alt="">        CV Expert</a></li>
+            <li><a href="group.html">  <img src="img/novartis.png" alt="">
+            Novartis</a></li>
+            <li><a href="group.html">  <img src="img/hjerteforeningen.png" alt="">Hjerteforeningen</a></li>
+            <li><a href="group.html">  <img src="img/cv-expert.png" alt="">
+            CV Expert</a></li>
           </ul>
 
           <ul class="groups-options">
@@ -119,10 +123,60 @@
 <!-- SIDEBAR END -->
 
       <div class="view col-xs-12 col-sm-12 col-md-8 col-lg-7">
-        <h1>PROFILE</h1>
+        <div class="row">
+          <div class="col-xs-12 profile-img_wrapper">
+            <div class="profile-img">
+              <div class="profile-img_change_overlay">
+                <span>Change picture</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-xs-12 col-sm-6 profile-info">
+            <input type="text" placeholder="Name" value="Jens Jensen">
+            <input type="text" placeholder="Title" value="MD PhD">
+            <input type="text" placeholder="Country" value="Denmark" id="country">
+            <input type="text" placeholder="Email" value="jj@qirri.com">
+            <input type="text" placeholder="Doctor ID" value="#5SD4SD6786">
+          </div>
+
+          <div class="col-xs-12 col-sm-6 profile-area">
+            <input type="text" placeholder="Add theurapeutic areas" id="areas" >
+
+            <div class="users-area col-xs-12">
+              <span>Area 1</span>
+              <div class="close"><img src="img/close-blue.svg" alt=""></div>
+              <div class="close-slide">Remove</div>
+            </div>
+
+            <div class="users-area col-xs-12">
+              <span>Area 2</span>
+              <div class="close"><img src="img/close-blue.svg" alt=""></div>
+              <div class="close-slide">Remove</div>
+            </div>
+
+            <div class="users-area col-xs-12">
+              <span>Area 3</span>
+              <div class="close"><img src="img/close-blue.svg" alt=""></div>
+              <div class="close-slide">Remove</div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xs-12 profile-bottom">
+          <button>Save changes</button>
+        </div>
+
       </div>
 
     </div>
-  <script src="js/menuToggle.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/menuToggle.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="vendor/selectize/js/standalone/selectize.min.js" ></script>
   </body>
 </html>

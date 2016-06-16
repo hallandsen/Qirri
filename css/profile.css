@@ -1,0 +1,156 @@
+.view {
+  display: initial;
+}
+
+.profile-img_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  background: url(../img/user-stock.jpg) center;
+  background-size: cover;
+  border-radius: 100%;
+  height:200px;
+  width: 200px;
+  display: block;
+
+}
+
+.profile-img_change_overlay {
+  cursor: pointer;
+  opacity: 0;
+  border-radius: 100%;
+  height:200px;
+  width: 200px;
+  background-color: rgba(0, 187, 254, 0.40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: 0.25s ease-in-out;
+}
+
+.profile-img_change_overlay:hover {
+  opacity: 1;
+}
+
+.profile-info {
+  padding-right: 40px;
+}
+
+.profile-area {
+  padding-left: 40px;
+}
+
+input, .signup-field, .selectize-control {
+  margin: 25px 0 0px 0;
+  width: 100%;
+}
+
+.selectize-control {
+  margin-bottom: -5px;
+}
+
+.selectize-control .selectize-input {
+  margin:0;
+}
+
+.selectize-input input {
+  font-size: inherit;
+}
+
+.selectize-dropdown {
+  border-color: #00BBFE;
+}
+
+.selectize-dropdown-content {
+  font-size: 1.2em;
+}
+
+.selectize-input, .selectize-control.multi .selectize-input.has-items {
+  display: inline-block;
+  border: solid 1px #00BBFE;
+  padding: 20px;
+  border-radius: 4px;
+  font-size: inherit;
+}
+
+.selectize-control.multi .selectize-input > div {
+  margin: 0 5px;
+  padding:0 5px;
+}
+
+.selectize-control.single .selectize-input, .selectize-control.single .selectize-input input {
+  cursor: text;
+}
+
+.users-area {
+  display: inline-block;
+  border: solid 1px #00BBFE;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 12px;
+  text-align: center;
+  width: 70%;
+  cursor: default;
+}
+
+.close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top:0;
+  bottom:0;
+  right: 20px;
+  width: auto;
+  opacity: 0.4;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close img {
+  height: 15px;
+}
+
+.close-slide {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  right: 0;
+  overflow: hidden;
+  transition: 0.25s;
+  z-index: 2;
+  background-color: #D71F2A;
+  color: white;
+  cursor: pointer;
+}
+
+.close-slide_in {
+  width: 80px;
+}
+
+.profile-bottom {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.profile-bottom button {
+  margin-top: 20px;
+  border-color: #00BBFE;
+  color:#00BBFE;
+  padding: 10px 40px;
+}
+
+@media (max-width: 768px) {
+  .profile-info, .profile-area {
+    padding:0 20px 40px;
+  }
+}
